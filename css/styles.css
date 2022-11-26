@@ -84,7 +84,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--ligth-text);
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
@@ -152,6 +152,7 @@ body {
 .filter-button {
   font-weight: 600;
   font-size: 16px;
+  font-family: inherit ;
   line-height: 1.5;
   color: var(--brand-color);
   justify-content: center;
