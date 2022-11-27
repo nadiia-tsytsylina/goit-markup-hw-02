@@ -25,8 +25,17 @@ body {
 .link {
   text-decoration: none;
 }
-.hidden-title {
-  display: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /*header*/
@@ -51,11 +60,10 @@ body {
   line-height: 1.5;
   color: var(--main-text);
 }
-.navigation-link:hover {
-  color: var(--main-text);
-}
+.navigation-link:hover,
 .contacts-link:hover,
-.navigation-link:focus {
+.navigation-link:focus,
+.contacts-link:focus {
   color: var(--brand-color);
 }
 .current{
@@ -91,12 +99,11 @@ body {
   cursor: pointer;
   margin-bottom: 192px;
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.hero-button:focus {
-  background: #404bbf;
+    background: #404bbf;
 }
 
 /*section common*/
@@ -130,6 +137,12 @@ body {
   background-color: var(--background-light);
   padding-top: 120px;
 }
+.team-item{
+  background-color: var(--main-background);
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
 
 /*footer*/
 .footer {
@@ -145,10 +158,11 @@ body {
 }
 
 /*portfolio*/
-.filter {
+.gallery {
+  margin-bottom: 120px;
   margin-top: 96px;
-  margin-bottom: 72px;
 }
+
 .filter-button {
   font-weight: 600;
   font-size: 16px;
@@ -171,7 +185,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--ligth-text);
 }
-
-.gallery {
-  margin-bottom: 120px;
+.filter-list{
+  margin-bottom: 72px;
 }
+
