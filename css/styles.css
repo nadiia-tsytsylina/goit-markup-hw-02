@@ -45,6 +45,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: var(--title-text);
+  text-transform: uppercase;
 }
 .logo-accent {
   color: var(--brand-color);
@@ -61,9 +62,13 @@ body {
   color: var(--main-text);
 }
 .navigation-link:hover,
+.navigation-link:focus {
+  color: var(--main-text);
+}
 .contacts-link:hover,
-.navigation-link:focus,
-.contacts-link:focus {
+.contacts-link:focus,
+.contacts-link:active,
+.navigation-link:active{
   color: var(--brand-color);
 }
 .current{
@@ -101,9 +106,10 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    background: #404bbf;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.hero-button:active{
+  background: #404BBF;
 }
 
 /*section common*/
